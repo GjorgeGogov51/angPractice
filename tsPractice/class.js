@@ -19,6 +19,9 @@ class Manager extends Employee {
     constructor(id, name, address) {
         super(id, name, address);
     }
+    getNameWithAddress() {
+        return `${this.name} is a manager at ${this.address}`;
+    }
 }
 let mike = new Manager(2, "Mike", "Cherise Drive");
 console.log(mike.getNameWithAddress());
